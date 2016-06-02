@@ -1,5 +1,5 @@
 #The Instruction of markpad#
-1 Git常用命令
+##Git常用命令##
 
 查看、添加、提交、删除、找回，重置修改文件
 
@@ -33,7 +33,7 @@ git revert <$id> # 恢复某次提交的状态，恢复动作本身也创建次�
 
 git revert HEAD # 恢复最后一次提交的状态
 
-查看文件diff
+##查看文件diff##
 
 git diff <file> # 比较当前文件和暂存区文件差异 git diff
 
@@ -57,11 +57,11 @@ git log -p -2 # 查看最近两次详细修改内容的diff
 
 git log --stat #查看提交统计信息
 
-tig
+##tig##
 
 Mac上可以使用tig代替diff和log，brew install tig
 
-Git 本地分支管理
+##Git 本地分支管理##
 
 查看、切换、创建和删除分支
 
@@ -97,7 +97,7 @@ git merge origin/master --no-ff # 不要Fast-Foward合并，这样可以生成me
 
 git rebase master <branch> # 将master rebase到branch，相当于： git co <branch> && git rebase master && git co master && git merge <branch>
 
- Git补丁管理(方便在多台机器上开发同步时用)
+## Git补丁管理(方便在多台机器上开发同步时用)##
 
 git diff > ../sync.patch # 生成补丁
 
@@ -105,7 +105,7 @@ git apply ../sync.patch # 打补丁
 
 git apply --check ../sync.patch #测试补丁能否成功
 
- Git暂存管理
+## Git暂存管理##
 
 git stash # 暂存
 
@@ -115,7 +115,7 @@ git stash apply # 恢复暂存的内容
 
 git stash drop # 删除暂存区
 
-Git远程分支管理
+## Git远程分支管理##
 
 git pull # 抓取远程仓库所有分支更新并合并到本地
 
@@ -141,7 +141,7 @@ git push origin <local_branch>:<remote_branch> # 创建远程分支
 
 git push origin :<remote_branch> #先删除本地分支(git br -d <branch>)，然后再push删除远程分支
 
-Git远程仓库管理
+## Git远程仓库管理##
 
 GitHub
 
